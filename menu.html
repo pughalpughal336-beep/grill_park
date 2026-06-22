@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grill Park Menu - Explore our premium selection of biryani, shawarma, grill, mandi, pizza, and seafood. Tiruppur's finest dining.">
+  <title>Menu - Grill Park | Tiruppur's Premier Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">GRILL PARK</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">
+          GRILL PARK
+          <span>TIRUPPUR</span>
+        </div>
+      </a>
+      <div class="navbar-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="index.html#about">About</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="catering.html">Catering</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="tel:+919999999999" class="btn btn-secondary btn-sm"><i class="fas fa-phone"></i> Call</a>
+        <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-bag"></i> Order Now</a>
+        <div class="mobile-toggle" id="mobileToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label">Our Menu</span>
+      <h1 class="heading-primary">Crafted to Perfection</h1>
+      <p>Every dish is a masterpiece, prepared with the finest ingredients and unparalleled expertise.</p>
+    </div>
+  </section>
+
+  <!-- Menu Filter -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="menu-filter" id="menuFilter">
+        <button class="menu-filter-btn active" data-filter="all">All</button>
+        <button class="menu-filter-btn" data-filter="biryani">Biryani</button>
+        <button class="menu-filter-btn" data-filter="shawarma">Shawarma</button>
+        <button class="menu-filter-btn" data-filter="grill">Grill</button>
+        <button class="menu-filter-btn" data-filter="mandi">Mandi</button>
+        <button class="menu-filter-btn" data-filter="pizza">Pizza</button>
+        <button class="menu-filter-btn" data-filter="seafood">Seafood</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="grid grid-3 grid-auto" id="menuGrid">
+        <!-- Biryani Items -->
+        <div class="dish-card" data-category="biryani">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&q=80" alt="Chicken Biryani" loading="lazy">
+            <span class="dish-card-badge">Bestseller</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Chicken Biryani</h3>
+            <p class="dish-card-desc">Fragrant basmati rice layered with tender chicken, slow-cooked with aromatic spices</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹349</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="biryani">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1630394029969-40081b3fea19?w=400&q=80" alt="Mutton Biryani" loading="lazy">
+            <span class="dish-card-badge">Premium</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Mutton Biryani</h3>
+            <p class="dish-card-desc">Tender mutton pieces layered with aged basmati rice, slow-cooked in dum style</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹549</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="biryani">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&q=80" alt="Prawn Biryani" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Prawn Biryani</h3>
+            <p class="dish-card-desc">Succulent prawns with fragrant rice, coastal-style spiced perfection</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹649</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="biryani">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1630394029969-40081b3fea19?w=400&q=80" alt="Egg Biryani" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Egg Biryani</h3>
+            <p class="dish-card-desc">Spiced rice with perfectly boiled eggs, a vegetarian-friendly delight</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹249</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shawarma Items -->
+        <div class="dish-card" data-category="shawarma">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823e187?w=400&q=80" alt="Chicken Shawarma" loading="lazy">
+            <span class="dish-card-badge">Popular</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Classic Chicken Shawarma</h3>
+            <p class="dish-card-desc">Marinated chicken wrapped in warm pita with garlic sauce and pickles</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹199</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="shawarma">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823e187?w=400&q=80" alt="Grill Shawarma" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Grill Shawarma Plate</h3>
+            <p class="dish-card-desc">Shawarma meat served on a plate with rice, salad, and signature sauces</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹349</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="shawarma">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823e187?w=400&q=80" alt="Beef Shawarma" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Beef Shawarma</h3>
+            <p class="dish-card-desc">Juicy beef shawarma with special spicy hummus and grilled veggies</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹249</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grill Items -->
+        <div class="dish-card" data-category="grill">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Mixed Grill Platter" loading="lazy">
+            <span class="dish-card-badge">Signature</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Mixed Grill Platter</h3>
+            <p class="dish-card-desc">Assortment of grilled chicken, beef, lamb, and seafood with herb butter</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹1,299</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="grill">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Tandoori Chicken" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Tandoori Chicken</h3>
+            <p class="dish-card-desc">Whole chicken marinated in yogurt and spices, cooked in clay oven</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹499</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="grill">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" alt="Grilled Fish" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Grilled Fish</h3>
+            <p class="dish-card-desc">Fresh catch marinated in coastal spices, charcoal-grilled to perfection</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹599</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="grill">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Grilled Chicken Breast" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Grilled Chicken Breast</h3>
+            <p class="dish-card-desc">Herb-marinated chicken breast with sautéed vegetables</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹449</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="grill">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&q=80" alt="Kebab Platter" loading="lazy">
+            <span class="dish-card-badge">Chef's Pick</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Seekh Kebab Platter</h3>
+            <p class="dish-card-desc">Minced lamb skewers with mint chutney and onion rings</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹549</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mandi Items -->
+        <div class="dish-card" data-category="mandi">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1630394029969-40081b3fea19?w=400&q=80" alt="Chicken Mandi" loading="lazy">
+            <span class="dish-card-badge">Bestseller</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Chicken Mandi</h3>
+            <p class="dish-card-desc">Traditional Yemeni-style spiced rice with slow-roasted chicken</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹449</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="mandi">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1630394029969-40081b3fea19?w=400&q=80" alt="Mutton Mandi" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Mutton Mandi</h3>
+            <p class="dish-card-desc">Tender mutton shanks over fragrant mandi rice with raita</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹699</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="mandi">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" alt="Fish Mandi" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Fish Mandi</h3>
+            <p class="dish-card-desc">Crispy fried fish served with mandi rice and zhug sauce</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹599</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizza Items -->
+        <div class="dish-card" data-category="pizza">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Grill Park Special Pizza" loading="lazy">
+            <span class="dish-card-badge">House Special</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Grill Park Special Pizza</h3>
+            <p class="dish-card-desc">Loaded with grilled chicken, peppers, olives, and mozzarella</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹499</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="pizza">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Pepperoni Pizza" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Pepperoni Pizza</h3>
+            <p class="dish-card-desc">Classic pepperoni with mozzarella and tangy tomato sauce</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹399</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="pizza">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Margherita Pizza" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Margherita Pizza</h3>
+            <p class="dish-card-desc">Fresh mozzarella, basil, and Roma tomatoes on thin crust</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹349</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seafood Items -->
+        <div class="dish-card" data-category="seafood">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" alt="Seafood Platter" loading="lazy">
+            <span class="dish-card-badge">Premium</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Coastal Seafood Platter</h3>
+            <p class="dish-card-desc">Prawns, fish, squid, and crab grilled with coastal spices</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹999</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="seafood">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" alt="Grilled Prawns" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Garlic Butter Prawns</h3>
+            <p class="dish-card-desc">Jumbo prawns in garlic butter sauce with herbs</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹649</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="seafood">
+          <div class="dish-card-image">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80" alt="Fish Curry" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-title">Malabar Fish Curry</h3>
+            <p class="dish-card-desc">Traditional Kerala-style fish curry with coconut and spices</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">₹449</span>
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="navbar-logo">GRILL PARK <span>TIRUPPUR</span></div>
+          <p>Grill Park is Tiruppur's premier family dining destination since 2010.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Zomato"><i class="fas fa-utensils"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+            <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+            <li><a href="catering.html"><i class="fas fa-chevron-right"></i> Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Download App</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fab fa-google-play"></i> Google Play</a></li>
+            <li><a href="#"><i class="fab fa-apple"></i> App Store</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Grill Park. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="footer-whatsapp" target="_blank" rel="noopener" aria-label="Order via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
